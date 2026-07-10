@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>TOKO JIPUNG</title>
 
 <style>
@@ -21,70 +20,98 @@ body{
 
 .hero{
     min-height:100vh;
-    background:
-    linear-gradient(rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)),
-    url("laut-biru.jpeg");
+    background-image:url("laut%20biru.jpeg");
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
+
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+
     text-align:center;
     padding:20px;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+}
+
+.hero h1,
+.hero p,
+.hero a{
+    position:relative;
+    z-index:1;
 }
 
 .hero h1{
-    font-size:3rem;
+    font-size:56px;
     margin-bottom:15px;
 }
 
 .hero p{
-    max-width:600px;
-    font-size:1.1rem;
+    font-size:20px;
     margin-bottom:20px;
 }
 
 .btn{
+    display:inline-block;
     background:#25D366;
     color:white;
     text-decoration:none;
-    padding:12px 25px;
-    border-radius:8px;
+    padding:14px 24px;
+    border-radius:10px;
     font-weight:bold;
 }
 
 .section{
-    padding:50px 20px;
-    max-width:900px;
+    max-width:1000px;
     margin:auto;
+    padding:40px 20px;
 }
 
 .section h2{
-    text-align:center;
-    margin-bottom:20px;
+    margin:30px 0 15px;
 }
 
 .card{
     background:#222;
+    margin:12px 0;
     padding:15px;
-    margin-bottom:10px;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.icon{
+    width:45px;
+    height:45px;
+    object-fit:cover;
     border-radius:10px;
+}
+
+.footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+    color:#aaa;
 }
 </style>
 </head>
-
 <body>
 
 <section class="hero">
     <h1>TOKO JIPUNG</h1>
 
-    <p>
-        Jasa Kreatif Digital & Pendampingan Personal
-    </p>
+    <p>Jasa Kreatif Digital & Pendampingan Personal</p>
 
-    <a class="btn" href="https://wa.me/6285134662506">
+    <a class="btn" href="https://wa.me/6285134662506" target="_blank">
         Hubungi WhatsApp
     </a>
 </section>
@@ -93,25 +120,29 @@ body{
 
     <h2>🎨 Jasa Kreatif Digital</h2>
 
-    <div class="card">Edit Video Alight Motion</div>
-    <div class="card">Preset Alight Motion</div>
-    <div class="card">Desain Foto</div>
-    <div class="card">Desain Logo</div>
-    <div class="card">Thumbnail YouTube</div>
+    <div class="card">
+        <img src="download.jpeg" class="icon" alt="Alight Motion">
+        Edit Video Alight Motion
+    </div>
 
-</section>
-
-<section class="section">
+    <div class="card">✨ Preset Alight Motion</div>
+    <div class="card">🖼️ Desain Foto</div>
+    <div class="card">🎨 Desain Logo</div>
+    <div class="card">📺 Thumbnail YouTube</div>
 
     <h2>💬 Jasa Pendampingan</h2>
 
-    <div class="card">Teman Curhat</div>
-    <div class="card">Konsultasi Umum</div>
-    <div class="card">Belajar Membaca Anak</div>
-    <div class="card">Teman Diskusi</div>
-    <div class="card">Pendamping Healing</div>
+    <div class="card">🤝 Teman Curhat</div>
+    <div class="card">📚 Konsultasi Umum</div>
+    <div class="card">🔤 Belajar Membaca Anak</div>
+    <div class="card">🧠 Teman Diskusi</div>
+    <div class="card">🌿 Pendamping Healing</div>
 
 </section>
 
+<footer class="footer">
+    © 2026 TOKO JIPUNG
+</footer>
+
 </body>
-</html>
+    </html>
