@@ -1,51 +1,91 @@
-<body>
-
-<h1>TOKO JIPUNG</h1>
-
-<p>Jasa Kreatif Digital & Pendampingan Personal</p>
-
-<p>
-Melayani edit video Alight Motion, desain foto, desain logo,
-thumbnail YouTube, pendampingan belajar, konsultasi, dan layanan personal lainnya.
-</p>
-
-<h2>🎨 Jasa Kreatif Digital</h2>
-<ul>
-<li>Edit Video Alight Motion</li>
-<li>Preset Alight Motion</li>
-<li>Desain Foto</li>
-<li>Desain Logo</li>
-<li>Thumbnail YouTube</li>
-</ul>
-
-<h2>💬 Jasa Pendampingan</h2>
-<ul>
-<li>Teman Curhat</li>
-<li>Konsultasi Umum</li>
-<li>Belajar Membaca Anak</li>
-<li>Teman Diskusi</li>
-<li>Pendamping Healing</li>
-</ul>
-
-</body>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOKO JIPUNG</title>
 
 <style>
-.whatsapp-btn{
-    background:#25D366;
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#111;
     color:white;
-    padding:14px 30px;
-    text-decoration:none;
-    border-radius:999px;
-    font-size:18px;
-    font-weight:bold;
-    display:inline-block;
-    transition:0.3s;
 }
 
-.whatsapp-btn:hover{
-    transform:scale(1.05);
+.hero{
+    min-height:100vh;
+    background:url('laut-biru.jpeg');
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.section{
+    padding:30px;
+}
+
+.card{
+    background:#222;
+    margin:10px 0;
+    padding:15px;
+    border-radius:10px;
+}
+
+.btn{
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:8px;
+    margin-top:15px;
 }
 </style>
-<a href="https://wa.me/6285134662506" class="whatsapp-btn">
-📱 Hubungi WhatsApp
-</a>
+</head>
+
+<body>
+
+<div class="hero">
+    <h1>TOKO JIPUNG</h1>
+
+    <p>
+    Jasa Kreatif Digital & Pendampingan Personal
+    </p>
+
+    <a class="btn" href="https://wa.me/6285134662506">
+    Hubungi WhatsApp
+    </a>
+</div>
+
+<div class="section">
+
+<h2>🎨 Jasa Kreatif Digital</h2>
+
+<div class="card">Edit Video Alight Motion</div>
+<div class="card">Preset Alight Motion</div>
+<div class="card">Desain Foto</div>
+<div class="card">Desain Logo</div>
+<div class="card">Thumbnail YouTube</div>
+
+<h2>💬 Jasa Pendampingan</h2>
+
+<div class="card">Teman Curhat</div>
+<div class="card">Konsultasi Umum</div>
+<div class="card">Belajar Membaca Anak</div>
+<div class="card">Teman Diskusi</div>
+<div class="card">Pendamping Healing</div>
+
+</div>
+
+</body>
+</html>
