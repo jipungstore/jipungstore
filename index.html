@@ -227,6 +227,33 @@ height:200px;
 height:35px;
 }
 
+.feedback-section{
+max-width:700px;
+margin:60px auto;
+padding:25px;
+background:#fff;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.feedback-section input,
+.feedback-section textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:10px;
+box-sizing:border-box;
+}
+
+.feedback-section button{
+padding:12px 25px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+  }
+  
 }
 </style>
 
@@ -390,7 +417,34 @@ Chat WhatsApp
 </div>
 
 </section>
+<section class="feedback-section">
+<h2>📝 Saran & Masukan</h2>
+<p>Kami menghargai setiap masukan untuk meningkatkan layanan Jipungstore.</p>
 
+<form action="https://formspree.io/f/mykrgzbj" method="POST">
+
+<input
+type="text"
+name="nama"
+placeholder="Masukkan Nama"
+required>
+
+<input
+type="email"
+name="email"
+placeholder="Masukkan Gmail"
+required>
+
+<textarea
+name="saran"
+placeholder="Tulis saran atau masukan Anda..."
+rows="5"
+required></textarea>
+
+<button type="submit">Kirim</button>
+
+</form>
+</section>
 <footer class="footer">
 © 2026 JIPUNG STORE
 </footer>
