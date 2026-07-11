@@ -6,7 +6,6 @@
 <title>JIPUNG STORE</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -22,7 +21,7 @@ overflow-x:hidden;
 
 .hero{
 min-height:100vh;
-background:url("beauty.jpeg") center center/cover no-repeat;
+background:url('beauty.jpeg') center center/cover no-repeat;
 position:relative;
 display:flex;
 justify-content:center;
@@ -31,7 +30,7 @@ text-align:center;
 }
 
 .hero::before{
-content:"";
+content:'';
 position:absolute;
 inset:0;
 background:rgba(0,0,0,.55);
@@ -39,7 +38,7 @@ background:rgba(0,0,0,.55);
 
 .hero-content{
 position:relative;
-z-index:10;
+z-index:2;
 max-width:800px;
 padding:20px;
 }
@@ -58,17 +57,12 @@ margin-bottom:30px;
 
 .btn{
 display:inline-block;
-padding:16px 35px;
+padding:15px 35px;
 background:#25D366;
 color:white;
 text-decoration:none;
-border-radius:15px;
+border-radius:12px;
 font-weight:bold;
-transition:.3s;
-}
-
-.btn:hover{
-transform:translateY(-3px);
 }
 
 .section{
@@ -91,20 +85,21 @@ gap:25px;
 
 .card{
 background:white;
-border-radius:25px;
+border-radius:20px;
 overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,.1);
+box-shadow:0 10px 25px rgba(0,0,0,.1);
 transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-10px);
+transform:translateY(-8px);
 }
 
 .card img{
 width:100%;
 height:230px;
 object-fit:cover;
+display:block;
 }
 
 .card-content{
@@ -124,7 +119,7 @@ gap:20px;
 .feature{
 background:#f5f7ff;
 padding:25px;
-border-radius:20px;
+border-radius:15px;
 text-align:center;
 }
 
@@ -140,18 +135,18 @@ font-size:42px;
 margin-bottom:20px;
 }
 
-.payment-marquee{
+.payment-bar{
 background:#081120;
-padding:20px 0;
 overflow:hidden;
+padding:20px 0;
 }
 
 .payment-track{
 display:flex;
-align-items:center;
 gap:80px;
+align-items:center;
 width:max-content;
-animation:scrollPayment 35s linear infinite;
+animation:slide 35s linear infinite;
 }
 
 .payment-track img{
@@ -159,16 +154,13 @@ height:45px;
 width:auto;
 }
 
-@keyframes scrollPayment{
-
+@keyframes slide{
 0%{
 transform:translateX(-100%);
 }
-
 100%{
-transform:translateX(100vw);
+transform:translateX(calc(100vw + 100%));
 }
-
 }
 
 .footer{
@@ -192,12 +184,15 @@ font-size:18px;
 font-size:32px;
 }
 
+.card img{
+height:200px;
+}
+
 .payment-track img{
 height:35px;
 }
 
 }
-
 </style>
 </head>
 
@@ -240,7 +235,7 @@ Hubungi WhatsApp
 <img src="Curhat.jpeg" alt="Teman Curhat">
 <div class="card-content">
 <h3>Teman Curhat</h3>
-<p>Teman berbagi cerita, diskusi, dan konsultasi ringan.</p>
+<p>Tempat berbagi cerita, diskusi, dan konsultasi ringan.</p>
 </div>
 </div>
 
@@ -264,7 +259,7 @@ Hubungi WhatsApp
 
 <div class="feature">
 <h3>⚡ Cepat</h3>
-<p>Pengerjaan efisien dan tepat waktu.</p>
+<p>Pengerjaan cepat dan tepat waktu.</p>
 </div>
 
 <div class="feature">
@@ -279,7 +274,7 @@ Hubungi WhatsApp
 
 <div class="feature">
 <h3>💳 Pembayaran Fleksibel</h3>
-<p>Mendukung berbagai metode pembayaran digital.</p>
+<p>Mendukung pembayaran digital.</p>
 </div>
 
 </div>
@@ -300,25 +295,21 @@ Chat WhatsApp
 
 </section>
 
-<section class="payment-marquee">
+<section class="payment-bar">
 
 <div class="payment-track">
 
-<img src="Paypal.png" alt="PayPal">
+<img src="Paypal.png" alt="Paypal">
 <img src="Dana.png" alt="Dana">
-<img src="Seabank.png" alt="SeaBank">
+<img src="Seabank.png" alt="Seabank">
 
-<img src="Paypal.png" alt="PayPal">
+<img src="Paypal.png" alt="Paypal">
 <img src="Dana.png" alt="Dana">
-<img src="Seabank.png" alt="SeaBank">
+<img src="Seabank.png" alt="Seabank">
 
-<img src="Paypal.png" alt="PayPal">
+<img src="Paypal.png" alt="Paypal">
 <img src="Dana.png" alt="Dana">
-<img src="Seabank.png" alt="SeaBank">
-
-<img src="Paypal.png" alt="PayPal">
-<img src="Dana.png" alt="Dana">
-<img src="Seabank.png" alt="SeaBank">
+<img src="Seabank.png" alt="Seabank">
 
 </div>
 
